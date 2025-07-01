@@ -33,3 +33,5 @@
 6. 最终PR，在 `2025年7月6日24:00` （北京时区）前提交，且各团队自己发起MR请求。
 
 7. [项目参考模块,点我查看详情](./projects/00-proj-template/README.md)
+   
+![demoday](https://github.com/user-attachments/assets/771d8164-320e-407d-81ee-f8078a6bca0a)
