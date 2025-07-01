@@ -33,5 +33,11 @@
 6. 最终PR，在 `2025年7月6日24:00` （北京时区）前提交，且各团队自己发起MR请求。
 
 7. [项目参考模块,点我查看详情](./projects/00-proj-template/README.md)
+
+## [项目文件提交-给小周]
+1. 请直接打包并提交： https://tally.so/r/wQq4ag
+2. 请在 `2025年7月6日上午24:00` (北京时区）前完成提交
+3. 每个队伍提交一份就可以，我们将以最后提交的版本为准
+   
    
 ![demoday](https://github.com/user-attachments/assets/771d8164-320e-407d-81ee-f8078a6bca0a)
