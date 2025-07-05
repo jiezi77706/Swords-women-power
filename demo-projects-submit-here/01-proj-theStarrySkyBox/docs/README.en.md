@@ -13,7 +13,7 @@
 
 **🌍 Language / 语言**
 
-[🇨🇳 中文](README.md) | [🇺🇸 English (Current)](#)
+[🇨🇳 中文](../README.md) | [🇺🇸 English (Current)](#)
 
 </div>
 
