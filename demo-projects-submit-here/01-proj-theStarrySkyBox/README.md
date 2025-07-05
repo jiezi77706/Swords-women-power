@@ -1,29 +1,25 @@
+<div align="center">
+
 # 星空宝盒 (The Starry Sky Box) ✨
 
-<div align="center">
-  
-  **🌍 Language / 语言**
-  
-  [🇨🇳 中文](#中文版本) | [🇺🇸 English](#english-version)
+**为偏远地区女孩们打造的去中心化数字纪念品宝盒**
 
-  ---
-  
-  **为偏远地区女孩们打造的去中心化数字纪念品宝盒**
-  
-  **A Decentralized Digital Memory Box for Girls in Remote Areas**
+![Web3](https://img.shields.io/badge/Web3-Blockchain-blue)
+![NFT](https://img.shields.io/badge/NFT-ERC721-green)
+![IPFS](https://img.shields.io/badge/Storage-IPFS-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-  ![Web3](https://img.shields.io/badge/Web3-Blockchain-blue)
-  ![NFT](https://img.shields.io/badge/NFT-ERC721-green)
-  ![IPFS](https://img.shields.io/badge/Storage-IPFS-orange)
-  ![License](https://img.shields.io/badge/License-MIT-yellow)
+---
+
+**🌍 Language / 语言**
+
+[🇨🇳 中文 (默认)](#) | [🇺🇸 English](#english-version)
 
 </div>
 
 ---
 
-## 中文版本
-
-### 📋 目录
+## 📋 目录
 - [🌟 项目愿景与使命](#-项目愿景与使命)
 - [💡 我们相信：技术应服务于人](#-我们相信技术应服务于人而非打扰)
 - [🛠️ 解决方案](#️-解决方案监护人模型下的web3赋能)
@@ -31,7 +27,7 @@
 - [📈 项目现状与下一步](#-项目现状与下一步)
 - [🤝 参与项目](#-参与项目)
 
-### 🌟 项目愿景与使命
+## 🌟 项目愿景与使命
 
 **项目名称：** 星空宝盒 (The Starry Sky Box)
 
@@ -39,18 +35,18 @@
 
 **核心使命：** 在这个即时通讯泛滥的时代，一封手写的信，承载着独一无二的温暖和心意。对于参与"彩虹公益社"项目的女孩们而言，这些信件是她们成长道路上宝贵的精神财富。然而，纸张会泛黄，文件会丢失。我们的使命，就是利用Web3技术，在不增加女孩任何负担、不改变"手写信"核心体验的前提下，为这份温暖**"赋予永恒"，为这份心意"赋予归属"，为这份创作"赋予力量"**。
 
-### 💡 我们相信：技术应服务于人，而非打扰
+## 💡 我们相信：技术应服务于人，而非打扰
 
 我们深刻地认识到，这个项目的灵魂是"手写信"所代表的人文关怀。因此，我们的核心原则是：
 
 - **技术退居幕后：** 女孩们的体验必须是极致简单和美好的。她不需要理解任何关于区块链、NFT或钱包的复杂概念。
 - **赋能而非取代：** 我们的目标不是用技术去"优化"流程，而是去"加持"那些传统技术无法解决的维度，如永久性、所有权和价值流转。
 
-### 🛠️ 解决方案："监护人"模型下的Web3赋能
+## 🛠️ 解决方案："监护人"模型下的Web3赋能
 
 为了实现上述目标，我们设计了一套以"彩虹公益社"作为**"数字宝盒监护人"**的创新模型，它由三个核心部分组成：
 
-#### 1. 核心功能："星空宝盒"画廊
+### 1. 核心功能："星空宝盒"画廊
 
 - **用户体验：** 每个女孩都会得到一个受密码保护的、只属于她的个人主页。当她登录后，看到的不是一个冰冷的列表，而是一片静谧、美丽的**"私人星空"**。
 
@@ -58,7 +54,7 @@
 
 - **零门槛访问：** 该网页无需安装任何浏览器钱包插件，女孩可以在任何普通的电脑或手机浏览器上访问，体验与登录普通网站完全一致。
 
-#### 2. 核心资产："数字信物"NFT
+### 2. 核心资产："数字信物"NFT
 
 - **铸造记忆：** 每一份经过审核的交流内容（信件、照片、画作），都将被公益社"铸造"成一个独一无二、不可伪造的"数字所有权证书"（NFT）。
 
@@ -66,17 +62,17 @@
 
 - **真正的拥有：** 这个NFT将被直接发送到为女孩创建的专属"数字宝盒"（一个Web3钱包地址）中，从代码和法律意义上，这份记忆从此只属于她一个人。
 
-#### 3. 核心保障："毕业日"的交接仪式
+### 3. 核心保障："毕业日"的交接仪式
 
 - **可信的监护：** 在女孩成年前，她的"数字宝盒"由"彩虹公益社"作为监护人，进行最高级别的安全保管。
 
 - **权力的归还：** 在她高中毕业、或任何她准备好的时刻，公益社将启动一个郑重的**"钥匙交接仪式"**，将这个"数字宝盒"的完整控制权（私钥）完全、彻底地交还给她本人。这是Web3精神的最终体现——我们不是在构建一个属于我们的平台，而是在为她们守护一份终将由她们自己掌握的财富。
 
-### 🚀 未来的篇章：从"纪念品"到"创作者经济"
+## 🚀 未来的篇章：从"纪念品"到"创作者经济"
 
 这个项目拥有巨大的成长潜力。我们构想了下一步的发展方向，旨在赋予女孩们真正的经济自主权。
 
-#### "双重保险箱"与选择性公开
+### "双重保险箱"与选择性公开
 
 **尊重意愿**
 我们将为每个NFT设计**"公开"与"私密"**两种存储模式。
@@ -88,22 +84,22 @@
 - **经济赋能：** 对于那些被她选择公开的画作，我们可以让其NFT兼容主流市场（如OpenSea），使之成为可售卖的数字艺术品。
 - **永恒的版税：** 利用EIP-2981版税标准，我们可以在NFT中写入规则："此画作未来每一次被成功转售，售价的10%都将自动、永久地直接汇入女孩自己的钱包地址。" 这为她提供了一条可持续的、不被中间商剥削的收入来源。
 
-### 📈 项目现状与下一步
+## 📈 项目现状与下一步
 
-#### 已完成功能 ✅
+### 已完成功能 ✅
 
 - 完成了核心智能合约的编写与测试网部署
 - 打通了使用Pinata和IPFS进行内容上链的全流程
 - 开发了一个功能完整的、无需钱包即可访问的"私人星空画廊"前端页面
 
-#### 下一步行动计划 🎯
+### 下一步行动计划 🎯
 
 1. **内部测试与反馈：** 将现有Demo分享给项目核心成员及部分志愿者，收集反馈
 2. **完善"监护人"后台：** 为公益社工作人员设计一个简单、安全的后台界面，用于管理女孩们的"数字宝盒"和批量铸造NFT
 3. **探索"双重保险箱"：** 在技术上预研并实现内容的加密存储与选择性展示功能
 4. **规划交接仪式：** 与公益社共同规划"钥匙交接仪式"的安全流程与用户教育方案
 
-### 🤝 参与项目
+## 🤝 参与项目
 
 如果您对这个项目感兴趣，欢迎通过以下方式参与：
 
@@ -114,7 +110,40 @@
 
 ---
 
-## English Version
+<div align="center">
+
+**Version:** v1.0  
+**Last Updated:** 2025
+
+> 💝 这个项目不仅仅是技术的展示，更是对人文关怀的技术致敬。让我们一起用技术的力量，为那些珍贵的记忆插上永恒的翅膀。
+
+**Made with ❤️ for a better world**
+
+</div>
+
+---
+
+<details>
+<summary>
+
+## 🇺🇸 English Version
+
+**Click here to view the English version / 点击这里查看英文版本**
+
+</summary>
+
+<div align="center">
+
+# The Starry Sky Box ✨
+
+**A Decentralized Digital Memory Box for Girls in Remote Areas**
+
+![Web3](https://img.shields.io/badge/Web3-Blockchain-blue)
+![NFT](https://img.shields.io/badge/NFT-ERC721-green)
+![IPFS](https://img.shields.io/badge/Storage-IPFS-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+</div>
 
 ### 📋 Table of Contents
 - [🌟 Vision & Mission](#-vision--mission)
@@ -210,7 +239,7 @@ If you're interested in this project, welcome to participate through:
 <div align="center">
 
 **Version:** v1.0  
-**Last Updated:** 2025-07-05
+**Last Updated:** 2025
 
 > 💝 This project is not just a showcase of technology, but a technological tribute to humanistic care. Let's use the power of technology to give those precious memories eternal wings.
 
@@ -218,3 +247,4 @@ If you're interested in this project, welcome to participate through:
 
 </div>
 
+</details>
