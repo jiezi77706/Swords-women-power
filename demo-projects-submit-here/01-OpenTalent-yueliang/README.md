@@ -119,4 +119,4 @@ Core Innovation: On-chain resume process control + IPFS decentralized storage
 > 项目价值主张：建立Web3时代的信任招聘协议，让人才价值通过区块链自由流动
 > 
 
-      Value proposition: Establish a trust-based recruitment protocol for the Web3 era, enabling talent         value to flow freely through blockchain technology
+      Value proposition: Establish a trust-based recruitment protocol for the Web3 era, enabling talent value to flow freely through blockchain technology
