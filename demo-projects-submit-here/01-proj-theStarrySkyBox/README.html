@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Starry Sky Box - GitHub Project</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #0366d6;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #586069;
+            margin-bottom: 20px;
+        }
+        
+        .badges {
+            margin: 20px 0;
+        }
+        
+        .badges img {
+            margin: 0 5px;
+        }
+        
+        .language-switcher {
+            background: #f6f8fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+            border: 1px solid #e1e4e8;
+        }
+        
+        .language-switcher button {
+            background: #0366d6;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .language-switcher button:hover {
+            background: #0256cc;
+        }
+        
+        .language-switcher button.active {
+            background: #28a745;
+        }
+        
+        .content {
+            transition: opacity 0.3s ease;
+        }
+        
+        .toc {
+            background: #f6f8fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #e1e4e8;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            color: #0366d6;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            margin: 5px 0;
+        }
+        
+        .toc a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            color: #0366d6;
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: #24292e;
+            margin-top: 30px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #f6f8fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+        }
+        
+        .feature-card h4 {
+            color: #0366d6;
+            margin-top: 0;
+        }
+        
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .status-card {
+            background: #f6f8fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .status-card.todo {
+            border-left-color: #0366d6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e4e8;
+            color: #586069;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .feature-grid,
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Starry Sky Box ✨</h1>
+        <p>A Decentralized Digital Memory Box for Girls in Remote Areas</p>
+        <div class="badges">
+            <img src="https://img.shields.io/badge/Web3-Blockchain-blue" alt="Web3">
+            <img src="https://img.shields.io/badge/NFT-ERC721-green" alt="NFT">
+            <img src="https://img.shields.io/badge/Storage-IPFS-orange" alt="IPFS">
+            <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+        </div>
+        
+        <div class="language-switcher">
+            <strong>🌍 Language / 语言</strong><br><br>
+            <a href="README.md" style="text-decoration: none;">
+                <button style="background: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; margin: 0 5px; font-size: 14px;">🇨🇳 中文</button>
+            </a>
+            <button style="background: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; margin: 0 5px; font-size: 14px;">🇺🇸 English (当前)</button>
+        </div>
+    </div>
+
+    <!-- 英文内容 -->
+    <div id="content-en" class="content">
+        <div class="toc">
+            <h2>📋 Table of Contents</h2>
+            <ul>
+                <li><a href="#vision-en">🌟 Vision & Mission</a></li>
+                <li><a href="#belief-en">💡 Our Belief: Technology Should Serve People</a></li>
+                <li><a href="#solution-en">🛠️ Solution</a></li>
+                <li><a href="#future-en">🚀 Future Chapters</a></li>
+                <li><a href="#status-en">📈 Current Status & Next Steps</a></li>
+                <li><a href="#participate-en">🤝 Get Involved</a></li>
+            </ul>
+        </div>
+
+        <h2 id="vision-en">🌟 Vision & Mission</h2>
+        <p><strong>Project Name:</strong> The Starry Sky Box (星空宝盒)</p>
+        <p><strong>One-Line Vision:</strong> We are committed to transforming the precious correspondence between girls in remote areas and volunteers into a private, eternal, and truly owned "digital memorabilia box."</p>
+        <p><strong>Core Mission:</strong> In this era of instant messaging overflow, a handwritten letter carries unique warmth and sincerity. For girls participating in the "Rainbow Charity Society" project, these letters are precious spiritual wealth on their growth journey. However, paper yellows and files get lost. Our mission is to use Web3 technology to <span class="highlight">"grant eternity" to this warmth, "grant ownership" to this sincerity, and "grant power" to this creation</span> - all without adding any burden to the girls or changing the core experience of "handwritten letters."</p>
+
+        <h2 id="belief-en">💡 Our Belief: Technology Should Serve People, Not Disturb</h2>
+        <p>We deeply recognize that the soul of this project is the humanistic care represented by "handwritten letters." Therefore, our core principles are:</p>
+        <ul>
+            <li><strong>Technology Behind the Scenes:</strong> The girls' experience must be extremely simple and beautiful. They don't need to understand any complex concepts about blockchain, NFTs, or wallets.</li>
+            <li><strong>Empowerment, Not Replacement:</strong> Our goal is not to "optimize" processes with technology, but to "enhance" dimensions that traditional technology cannot solve, such as permanence, ownership, and value circulation.</li>
+        </ul>
+
+        <h2 id="solution-en">🛠️ Solution: Web3 Empowerment Under "Guardian" Model</h2>
+        <p>To achieve the above goals, we designed an innovative model with "Rainbow Charity Society" as the <strong>"Digital Box Guardian,"</strong> consisting of three core components:</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>1. Core Function: "Starry Sky Box" Gallery</h4>
+                <ul>
+                    <li><strong>User Experience:</strong> Each girl gets a password-protected personal homepage. When she logs in, she sees a tranquil, beautiful <strong>"private starry sky."</strong></li>
+                    <li><strong>Visualization of Growth:</strong> Each "digital token" becomes a shining star, illuminating her night sky.</li>
+                    <li><strong>Zero-Barrier Access:</strong> No browser wallet plugins required, identical to logging into regular websites.</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4>2. Core Asset: "Digital Token" NFTs</h4>
+                <ul>
+                    <li><strong>Minting Memories:</strong> Each vetted communication content will be "minted" into a unique, unforgeable "digital ownership certificate" (NFT).</li>
+                    <li><strong>Permanent Preservation:</strong> Stored through <strong>IPFS and Arweave</strong> dual solutions, ensuring they are never lost.</li>
+                    <li><strong>True Ownership:</strong> From both code and legal perspectives, this memory belongs only to her.</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4>3. Core Guarantee: "Graduation Day" Handover Ceremony</h4>
+                <ul>
+                    <li><strong>Trusted Guardianship:</strong> Before the girl reaches adulthood, her "digital box" is kept under the highest level of security by "Rainbow Charity Society."</li>
+                    <li><strong>Return of Power:</strong> At her high school graduation, the charity will initiate a solemn <strong>"Key Handover Ceremony."</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="future-en">🚀 Future Chapters: From "Memorabilia" to "Creator Economy"</h2>
+        <p>This project has enormous growth potential. We envision the next development direction aimed at granting girls true economic autonomy.</p>
+        
+        <h3>"Dual Safe" and Selective Disclosure</h3>
+        <p><strong>Respecting Wishes:</strong> We will design <strong>"public" and "private"</strong> storage modes for each NFT.</p>
+        <ul>
+            <li><strong>Public Content:</strong> If a girl agrees to publicly display her artwork, its images can be publicly accessed.</li>
+            <li><strong>Private Content:</strong> Private letters will be encrypted with her personal public key before uploading to the decentralized network.</li>
+        </ul>
+        
+        <p><strong>Opening Economic Doors:</strong></p>
+        <ul>
+            <li><strong>Economic Empowerment:</strong> For artwork she chooses to make public, we can make their NFTs compatible with mainstream markets (like OpenSea).</li>
+            <li><strong>Eternal Royalties:</strong> Using the EIP-2981 royalty standard, 10% of each resale will automatically flow directly into the girl's wallet address.</li>
+        </ul>
+
+        <h2 id="status-en">📈 Current Status & Next Steps</h2>
+        <div class="status-grid">
+            <div class="status-card">
+                <h4>Completed Features ✅</h4>
+                <ul>
+                    <li>Completed core smart contract development and testnet deployment</li>
+                    <li>Established complete pipeline for content on-chain using Pinata and IPFS</li>
+                    <li>Developed a fully functional "private starry sky gallery" frontend accessible without wallets</li>
+                </ul>
+            </div>
+            
+            <div class="status-card todo">
+                <h4>Next Action Plan 🎯</h4>
+                <ol>
+                    <li><strong>Internal Testing & Feedback:</strong> Share existing Demo with core project members</li>
+                    <li><strong>Improve "Guardian" Backend:</strong> Design a simple, secure backend interface</li>
+                    <li><strong>Explore "Dual Safe":</strong> Research and implement encrypted storage and selective display</li>
+                    <li><strong>Plan Handover Ceremony:</strong> Collaborate to plan secure processes for the "key handover ceremony"</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2 id="participate-en">🤝 Get Involved</h2>
+        <p>If you're interested in this project, welcome to participate through:</p>
+        <ul>
+            <li>Providing technical support and suggestions</li>
+            <li>Participating in testing and feedback</li>
+            <li>Helping improve user experience</li>
+            <li>Supporting charitable causes</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <p><strong>Version:</strong> v1.0 | <strong>Last Updated:</strong> 2025</p>
+        <p>💝 This project is not just a showcase of technology, but a technological tribute to humanistic care. Let's use the power of technology to give those precious memories eternal wings.</p>
+        <p><strong>Made with ❤️ for a better world</strong></p>
+    </div>
+
+
+</body>
+</html> 
