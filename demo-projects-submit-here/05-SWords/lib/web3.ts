@@ -424,7 +424,7 @@ export class Web3Manager {
   private readOnlyProvider: ethers.JsonRpcProvider | null = null
 
   async connectWallet(): Promise<string> {
-    if (!window.ethereum) {
+    if (typeof window === "undefined" || !window.ethereum) {
       throw new Error("请安装 MetaMask 或其他 Web3 钱包")
     }
 

@@ -301,8 +301,10 @@ export default function DailyDrawPage() {
     setQuoteDrawCount(newCount)
     setHasDrawnQuoteToday(newCount >= 3)
 
-    localStorage.setItem("lastQuoteDrawDate", today)
-    localStorage.setItem("todayQuoteDrawCount", newCount.toString())
+    if (typeof window !== "undefined") {
+      localStorage.setItem("lastQuoteDrawDate", today)
+      localStorage.setItem("todayQuoteDrawCount", newCount.toString())
+    }
 
     toast({
       title: "格言抽取成功！",
@@ -336,8 +338,10 @@ export default function DailyDrawPage() {
     setBookDrawCount(newCount)
     setHasDrawnBookToday(newCount >= 3)
 
-    localStorage.setItem("lastBookDrawDate", today)
-    localStorage.setItem("todayBookDrawCount", newCount.toString())
+    if (typeof window !== "undefined") {
+      localStorage.setItem("lastBookDrawDate", today)
+      localStorage.setItem("todayBookDrawCount", newCount.toString())
+    }
 
     toast({
       title: "图书推荐成功！",

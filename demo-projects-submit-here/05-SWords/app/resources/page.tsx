@@ -372,7 +372,7 @@ export default function ResourcesPage() {
                       </div>
 
                       <Button
-                        onClick={() => window.open(resource.url, "_blank")}
+                        onClick={() => typeof window !== "undefined" && window.open(resource.url, "_blank")}
                         className="w-full bg-orange-600 hover:bg-orange-700 text-white"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
@@ -438,7 +438,7 @@ export default function ResourcesPage() {
                       </div>
 
                       <Button
-                        onClick={() => window.open(partner.website, "_blank")}
+                        onClick={() => typeof window !== "undefined" && window.open(partner.website, "_blank")}
                         variant="outline"
                         className="w-full bg-transparent border-orange-300 text-orange-600 hover:bg-orange-50 dark:border-orange-600 dark:text-orange-400 dark:hover:bg-orange-900/20"
                         disabled={partner.status === "planned"}
