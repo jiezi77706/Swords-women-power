@@ -1,4 +1,4 @@
-# SWords — Women Power ✊🏻💬
+# SWords 
 
 **Her words are her sword.**  
 **她的话语，就是她的利剑。**
