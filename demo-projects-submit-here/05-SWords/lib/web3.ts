@@ -424,7 +424,12 @@ export class Web3Manager {
   private readOnlyProvider: ethers.JsonRpcProvider | null = null
 
   async connectWallet(): Promise<string> {
-    if (typeof window === "undefined" || !window.ethereum) {
+    // 确保只在客户端执行
+    if (typeof window === "undefined") {
+      throw new Error("此功能仅在浏览器中可用")
+    }
+    
+    if (!window.ethereum) {
       throw new Error("请安装 MetaMask 或其他 Web3 钱包")
     }
 
@@ -484,6 +489,11 @@ export class Web3Manager {
   }
 
   async getCurrentAccount(): Promise<string | null> {
+    // 确保只在客户端执行
+    if (typeof window === "undefined") {
+      return null
+    }
+    
     if (!this.signer) return null
     try {
       return await this.signer.getAddress()
@@ -502,8 +512,31 @@ export class Web3Manager {
   }
 }
 
-// 全局 Web3 管理器实例
-export const web3Manager = new Web3Manager()
+// 全局 Web3 管理器实例 - 延迟初始化以避免SSR问题
+let _web3Manager: Web3Manager | null = null
+
+export function getWeb3Manager(): Web3Manager {
+  if (typeof window === "undefined") {
+    // 服务端返回一个空的管理器
+    return {
+      connectWallet: async () => { throw new Error("此功能仅在浏览器中可用") },
+      getReadOnlyContract: async () => { throw new Error("此功能仅在浏览器中可用") },
+      getContract: () => { throw new Error("此功能仅在浏览器中可用") },
+      getCurrentAccount: async () => null,
+      isConnected: () => false,
+      resetConnection: () => {},
+    } as unknown as Web3Manager
+  }
+  
+  if (!_web3Manager) {
+    _web3Manager = new Web3Manager()
+  }
+  
+  return _web3Manager
+}
+
+// 为了向后兼容，保留原来的导出
+export const web3Manager = getWeb3Manager()
 
 // 智能合约交互函数
 export async function getLatestQuotes(limit = 50): Promise<Quote[]> {

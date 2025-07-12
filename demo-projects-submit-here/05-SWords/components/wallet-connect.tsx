@@ -15,13 +15,20 @@ export default function WalletConnect({ onConnectionChange }: WalletConnectProps
   const [isConnected, setIsConnected] = useState(false)
   const [address, setAddress] = useState<string>("")
   const [isConnecting, setIsConnecting] = useState(false)
+  const [isClient, setIsClient] = useState(false); // 新增
   const { toast } = useToast()
 
   useEffect(() => {
+    setIsClient(true); // 组件挂载后才视为客户端
     checkConnection()
   }, [])
 
   const checkConnection = async () => {
+    // 确保只在客户端执行
+    if (typeof window === "undefined") {
+      return
+    }
+    
     try {
       const currentAccount = await web3Manager.getCurrentAccount()
       if (currentAccount) {
@@ -35,7 +42,7 @@ export default function WalletConnect({ onConnectionChange }: WalletConnectProps
   }
 
   const handleConnect = async () => {
-    if (!window.ethereum) {
+    if (!isClient || typeof window === "undefined" || !window.ethereum) {
       toast({
         title: "需要安装钱包",
         description: "请安装 MetaMask 或其他 Web3 钱包",
@@ -79,14 +86,20 @@ export default function WalletConnect({ onConnectionChange }: WalletConnectProps
     })
   }
 
-  if (!window.ethereum) {
+  if (!isClient) {
+    return null; // SSR 阶段不渲染
+  }
+
+  if (typeof window === "undefined" || !window.ethereum) {
     return (
       <Card className="bg-yellow-50 dark:bg-yellow-950/20 border-yellow-200 dark:border-yellow-800">
         <CardContent className="p-4">
           <div className="flex items-center gap-3">
             <AlertCircle className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />
             <div>
-              <p className="text-sm font-medium text-yellow-800 dark:text-yellow-200">需要 Web3 钱包</p>
+              <p className="text-sm font-medium text-yellow-800 dark:text-yellow-200">
+                需要 Web3 钱包
+              </p>
               <p className="text-xs text-yellow-700 dark:text-yellow-300">
                 请安装 MetaMask 或其他 Web3 钱包来使用区块链功能
               </p>

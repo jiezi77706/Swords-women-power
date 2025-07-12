@@ -56,6 +56,12 @@ export default function ProfilePage() {
   }, [isWalletConnected, connectedAddress])
 
   const checkWalletConnection = async () => {
+    // 确保只在客户端执行
+    if (typeof window === "undefined") {
+      setLoading(false)
+      return
+    }
+    
     try {
       const address = await web3Manager.getCurrentAccount()
       if (address) {

@@ -31,10 +31,19 @@ export default function AddQuote() {
   }, [])
 
   const checkWalletConnection = async () => {
-    const address = await web3Manager.getCurrentAccount()
-    if (address) {
-      setIsWalletConnected(true)
-      setConnectedAddress(address)
+    // 确保只在客户端执行
+    if (typeof window === "undefined") {
+      return
+    }
+    
+    try {
+      const address = await web3Manager.getCurrentAccount()
+      if (address) {
+        setIsWalletConnected(true)
+        setConnectedAddress(address)
+      }
+    } catch (error) {
+      console.error("检查钱包连接状态失败:", error)
     }
   }
 
