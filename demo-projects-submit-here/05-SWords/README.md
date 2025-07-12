@@ -67,7 +67,7 @@
 | 数据库         | Supabase (PostgreSQL)        | 存储语录、作者、评论等数据   |
 | 区块链         | Solidity (Sepolia 测试链)    | 合约铸造语录 & 评论          |
 | 部署平台       | Vercel                       | 持续部署与预览               |
-
+https://swords-women-power-whtp1iyrp-jiezi77706s-projects.vercel.app
 📁 Flow Diagrams:  
 - `docs/api-flow-diagram.md`  
 - `docs/wallet-interaction-flow.md`
